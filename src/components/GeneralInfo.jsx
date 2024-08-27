@@ -16,9 +16,9 @@ const GeneralInfo = () => {
         <div className="general-info">
             {isEditing ? (
                 <form onSubmit={handleSubmit}>
-                    <input type="text" name="name" value={info.name} onChange={handleChange}/>
-                    <input type="email" name="email" value={info.email} onChange={handleChange}/>
-                    <input type="tel" name="phone" value={info.phone} onChange={handleChange}/>
+                    <input type="text" name="name" value={info.name} onChange={handleChange} placeholder="Fullname"/>
+                    <input type="email" name="email" value={info.email} onChange={handleChange} placeholder="Email"/>
+                    <input type="tel" name="phone" value={info.phone} onChange={handleChange} placeholder="Contact"/>
                     <button type="submit">Submit</button>
                     <button type="button" onClick={()=> setIsEditing(false)}>Cancel</button>
                 </form>
